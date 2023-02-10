@@ -1,0 +1,17 @@
+table {
+    border:2px dotted gold;
+}
+
+td:hover {
+    background-color: grey;
+    color:yellow;
+}
+
+tr, th {
+    background-color: black;
+    color:cornsilk;
+}
+tr, td {
+    background-color:darkgreen;
+    color:white;
+}
