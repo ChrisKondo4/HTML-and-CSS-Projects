@@ -1,0 +1,12 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+input {
+    width: 200px;
+    margin-top: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
