@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Top 5 Numbers!</title>
-    <link rel="stylesheet" href="./css/one_page_website.css">
+    <script src="JS/one_page_website.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
 </head>
 <body>
     <div id="Home">
@@ -17,29 +18,73 @@
         <a href="#contact" id="link">SEND INFO TO DEBATE ME</a>
     </ul>
     
-    <div id="the_list">
-        <div>
-            <h2>Number 5, the number nine!</h2>
-            <img src="./images/9.gif" alt="9">
+    <div class="row">
+        <div class="column">
+          <img src="./images/9.gif" onclick="openModal();currentSlide(1)" class="hover-shadow">
         </div>
-        <div>
-            <h2>Number 4, the number eight!</h2>
-            <img src="./images/8.gif" alt="8">
+        <div class="column">
+          <img src="./images/8.gif" onclick="openModal();currentSlide(2)" class="hover-shadow">
         </div>
-        <div>
-            <h2>Number 3, the number zero!</h2>
-            <img src="./images/0.gif" alt="0">
+        <div class="column">
+          <img src="./images/0.gif" onclick="openModal();currentSlide(3)" class="hover-shadow">
         </div>
-        <div>
-            <h2>Number 2, the number one!</h2>
-            <img src="./images/1.gif" alt="1">
+        <div class="column">
+          <img src="./images/1.gif" onclick="openModal();currentSlide(4)" class="hover-shadow">
+      </div>
+      
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="img1_wide.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="img2_wide.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="img3_wide.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="img4_wide.jpg" style="width:100%">
+          </div>
+      
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption">HELP</p>
+          </div>
+      
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+          </div>
         </div>
-        <div>
-            <h2>Number 1, the number four!</h2>
-            <img src="./images/4.gif" alt="4">
-        </div>
-    </div>
-    
+      </div>
+
     <div id="video">
         <h3>Here's the number ranking list that inspired me!</h3>
         <iframe width="420" height="236" src="https://www.youtube.com/embed/NK2c0A6tyvU"></iframe>
